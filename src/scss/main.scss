@@ -1,0 +1,11 @@
+@import "config/reset";
+@import "config/mixins";
+@import "config/global";
+@import "config/fonts";
+
+//components
+@import "components/header.scss";
+@import "components/footer.scss";
+//components
+
+@import "config/media";
