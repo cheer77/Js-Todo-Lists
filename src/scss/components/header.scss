@@ -1,6 +1,95 @@
 @import "../config/mixins";
 
 .header {
-	min-height: 50px;
-	background-color: #000;
+	display: flex;
+	align-items: center;
+	min-height: 58px;
+	border-bottom: 1px solid #d8d8d8;
+
+	.cont {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__nav {
+		display: flex;
+	}
+
+	&__logo {
+		max-width: 76px;
+		cursor: pointer;
+
+		img {
+			transition: all 0.15s ease-in-out;
+
+			&:hover {
+				transform: scale(1.02);
+			}
+		}
+	}
+	&__boards {
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+
+		img {
+			margin-right: 5px;
+		}
+	}
+
+	&__logo,
+	&__boards {
+		position: relative;
+		padding-right: ac(19px, 10px);
+		margin-right: ac(20px, 10px);
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			width: 1px;
+			height: 100%;
+			background-color: #d8d8d8;
+		}
+	}
+
+	&__search {
+		width: ac(512px, 300px);
+		min-height: 30px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-radius: 25px;
+		background: #f4f4f4;
+
+		input {
+			width: 90%;
+			height: 85%;
+			border: none;
+			margin: 0 10px 0 8px;
+			background-color: transparent;
+			outline: transparent;
+		}
+
+		.search {
+			cursor: pointer;
+			margin-right: 9px;
+			padding: 6px;
+		}
+	}
+
+	&__info {
+		display: flex;
+		align-items: center;
+
+		div {
+			cursor: pointer;
+		}
+
+		div + div {
+			margin-left: ac(30px, 18px);
+		}
+	}
 }
