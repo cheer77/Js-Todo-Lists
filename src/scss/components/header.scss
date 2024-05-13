@@ -92,4 +92,30 @@
 			margin-left: ac(30px, 18px);
 		}
 	}
+
+	&__theme {
+		position: relative;
+		width: 40px;
+		min-height: 20px;
+		border: 1px solid #d8d8d8;
+		background-color: #fff;
+		border-radius: 20px;
+		cursor: pointer;
+
+		span {
+			position: absolute;
+			width: 20px;
+			height: 100%;
+			background-color: #b9b9b9;
+			border-radius: 50%;
+			transition: all 0.7s ease-in-out;
+		}
+	}
+
+	&__theme.active {
+		background-color: #ffff03;
+		span {
+			right: 0;
+		}
+	}
 }
