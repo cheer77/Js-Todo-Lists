@@ -6,6 +6,6 @@ BaseHelpers.checkWebpSupport();
 BaseHelpers.addTouchClass();
 BaseHelpers.addLoadedClass();
 
-createHeaderSection();
+// createHeaderSection();
 
 switchTheme();
